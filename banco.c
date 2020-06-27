@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "banco.h"
 
 struct Cliente{
@@ -12,7 +13,7 @@ struct Conta{
   	struct Cliente cliente;
   	float saldo;
 };
-
+ FILE * fPtr;
 void criarConta(){
 	printf("Digite seu nome\n");
     scanf("%s", &pCliente.nome);
@@ -23,6 +24,16 @@ void criarConta(){
   	pConta.numero = 1234;
   	pConta.cliente = pCliente;
   	pConta.saldo = 0;
+
+    fPtr = fopen("resultado.txt", "w");
+    if(fPtr == NULL)    {
+        printf("Unable to create file.\n");
+        exit(EXIT_FAILURE);
+    }
+    char conteudo[100] = "Criar conta: ";
+    strcat(conteudo, pCliente.nome);
+
+    fputs(conteudo, fPtr);
 
   	imprimirSaldo();
 }
@@ -36,6 +47,11 @@ void depositar(float valor){
     }
     system("pause");
     system("cls");
+
+    // char conteudo[1000] = "Valor depositado: ";
+    // strcat(conteudo, (char)valor);
+
+    // fputs(conteudo, fPtr);
 }
 
 void saque(float valor){
@@ -57,5 +73,4 @@ void imprimirSaldo(){
   	system("pause");
     system("cls");
 }
-
 

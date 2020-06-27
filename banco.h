@@ -1,7 +1,7 @@
 #define T 100
 
- struct Conta pConta;
- struct Cliente pCliente;
+struct Conta pConta;
+struct Cliente pCliente;
 
 //pConta vConta;
 //pCliente vCliente;
@@ -14,3 +14,5 @@ void iniciar();
 void depositar(float valor);
 void saque(float valor);
 void imprimirSaldo();
+
+

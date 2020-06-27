@@ -11,3 +11,16 @@
 
 1593267629 c:\users\davi\documents\projetoscodeblocks\lpproj\banco.h
 
+1593271179 source:/home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/main.c
+	<stdio.h>
+	<stdlib.h>
+	"banco.c"
+
+1593271250 /home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/banco.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"banco.h"
+
+1593270817 /home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/banco.h
+
