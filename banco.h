@@ -14,5 +14,5 @@ void iniciar();
 void depositar(float valor);
 void saque(float valor);
 void imprimirSaldo();
-
+void escreverSaldo();
 

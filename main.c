@@ -32,7 +32,7 @@ int main()
       imprimirSaldo();
       break;
     case 4:
-      // fclose(fPtr);
+      fclose(fPtr);
       return 0;
     default:
       printf("Opcao invalida\n");

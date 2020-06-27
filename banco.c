@@ -42,22 +42,32 @@ void depositar(float valor){
 	if (valor > 0) {
     	pConta.saldo += valor;
   	  	printf("Seu saldo atual eh de R$%.2f\n", pConta.saldo);
+
+        char conteudo[100] = "\n\n--Deposito: R$";
+        char num[50];
+        snprintf(num, 50, "%.2f", valor);
+        strcat(conteudo, num);
+        fputs(conteudo, fPtr);
+        escreverSaldo();
     } else {
         printf("O valor deve ser positivo\n");
     }
     system("pause");
     system("cls");
 
-    // char conteudo[1000] = "Valor depositado: ";
-    // strcat(conteudo, (char)valor);
-
-    // fputs(conteudo, fPtr);
 }
 
 void saque(float valor){
 	if(pConta.saldo >= valor){
         pConta.saldo -= valor;
         printf("Seu saldo atual eh de R$%.2f\n", pConta.saldo);
+
+        char conteudo[100] = "\n\n--Saque: R$";
+        char num[50];
+        snprintf(num, 50, "%.2f", valor);
+        strcat(conteudo, num);
+        fputs(conteudo, fPtr);
+        escreverSaldo();
     } else {
         printf("Voce nao tem saldo suficiente\n");
     }
@@ -72,5 +82,14 @@ void imprimirSaldo(){
   	printf("Seu saldo eh de R$%.2f\n", pConta.saldo);
   	system("pause");
     system("cls");
+}
+
+void escreverSaldo(){
+
+    char conteudo[100] = "\n--Saldo atual: R$";
+    char num[50];
+    snprintf(num, 50, "%.2f", pConta.saldo);
+    strcat(conteudo, num);
+    fputs(conteudo, fPtr);
 }
 
