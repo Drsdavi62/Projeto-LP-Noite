@@ -1,15 +1,16 @@
 # depslib dependency file v1.0
-1593267889 source:c:\users\davi\documents\projetoscodeblocks\lpproj\main.c
+1593349990 source:c:\users\davi\documents\projetoscodeblocks\lpproj\main.c
 	<stdio.h>
 	<stdlib.h>
 	"banco.c"
 
-1593268095 c:\users\davi\documents\projetoscodeblocks\lpproj\banco.c
+1593350146 c:\users\davi\documents\projetoscodeblocks\lpproj\banco.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	"banco.h"
 
-1593267629 c:\users\davi\documents\projetoscodeblocks\lpproj\banco.h
+1593349990 c:\users\davi\documents\projetoscodeblocks\lpproj\banco.h
 
 1593272873 source:/home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/main.c
 	<stdio.h>

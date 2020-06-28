@@ -16,7 +16,7 @@ struct Conta{
  FILE * fPtr;
 void criarConta(){
 	printf("Digite seu nome\n");
-    scanf("%s", &pCliente.nome);
+    gets(pCliente.nome);
     fflush(stdin);
   	printf("Digite seu CPF\n");
   	scanf("%ld", &pCliente.cpf);
@@ -85,11 +85,11 @@ void imprimirSaldo(){
 }
 
 void escreverSaldo(){
-
     char conteudo[100] = "\n--Saldo atual: R$";
     char num[50];
     snprintf(num, 50, "%.2f", pConta.saldo);
     strcat(conteudo, num);
     fputs(conteudo, fPtr);
+    fflush(stdin);
 }
 

@@ -8,7 +8,6 @@ int main()
 {
 
   int opc = 0;
-  // iniciar();
   criarConta();
   do
   {
