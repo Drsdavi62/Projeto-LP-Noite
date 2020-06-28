@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1593350617 source:/home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/exercicio-gabarito/main.c
+	<stdio.h>
+	<stdlib.h>
+
