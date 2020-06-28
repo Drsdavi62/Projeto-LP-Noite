@@ -1,0 +1,48 @@
+Ra: 12134 
+Resposta: bcdadceeaabdeaeaabcdadceeadeaeaabcdaceeeababceabceda 
+Resultado: 9 
+
+Ra: 12131 
+Resposta: cbabcadeacbaeabdeaeaabcdaeeaabdaabdeaeaabcedaaabdeae 
+Resultado: 9 
+
+Ra: 12233 
+Resposta: abdeaeaabcdaeeaabdaabdeaeadeaeaabcdaeeaabdaabdeaeaaa 
+Resultado: 10 
+
+Ra: 12341 
+Resposta: eabcabdeabcbadebcabdeabcaabbdeadcbaedabccadeaabcbade 
+Resultado: 11 
+
+Ra: 13244 
+Resposta: adbceadcdebacdaabdbebabddeccedacedacbabcadbecbadbeac 
+Resultado: 8 
+
+Ra: 13311 
+Resposta: cbabcadeacbaeabdeaeaabcdaeeaabdaabdeaeaabcedaaabdeae 
+Resultado: 9 
+
+Ra: 14411 
+Resposta: eabdeaeaabcdaeeaabdaaeaabcdaeeaaeaeaabcdaeeaabdaabde 
+Resultado: 11 
+
+Ra: 15286 
+Resposta: acbabbbdadeebedcdacbabcbdebdbcabdbebadbcbdabebdabcba 
+Resultado: 9 
+
+Ra: 12121 
+Resposta: abcbabcbdebbcbadbebabcaacbceebbdedabbcbadbebcbabdbeb 
+Resultado: 13 
+
+Ra: 13241 
+Resposta: caaedcedaceadecbcbabcbbebdabebdbacbabdbadebbaebebadb 
+Resultado: 14 
+
+Ra: 16511 
+Resposta: edadbebabbdcccabacaedeeecadeacddacabdbaebcabdabebcab 
+Resultado: 11 
+
+Ra: 11144 
+Resposta: bcabadbdabebebabdbbbcccdaaacdaceadcaeeeadcadededcaed 
+Resultado: 15 
+
