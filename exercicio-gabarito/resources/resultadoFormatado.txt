@@ -1,48 +1,12 @@
-Ra: 12134 
-Resposta: bcdadceeaabdeaeaabcdadceeadeaeaabcdaceeeababceabceda 
-Resultado: 9 
-
-Ra: 12131 
-Resposta: cbabcadeacbaeabdeaeaabcdaeeaabdaabdeaeaabcedaaabdeae 
-Resultado: 9 
-
-Ra: 12233 
-Resposta: abdeaeaabcdaeeaabdaabdeaeadeaeaabcdaeeaabdaabdeaeaaa 
-Resultado: 10 
-
-Ra: 12341 
-Resposta: eabcabdeabcbadebcabdeabcaabbdeadcbaedabccadeaabcbade 
-Resultado: 11 
-
-Ra: 13244 
-Resposta: adbceadcdebacdaabdbebabddeccedacedacbabcadbecbadbeac 
-Resultado: 8 
-
-Ra: 13311 
-Resposta: cbabcadeacbaeabdeaeaabcdaeeaabdaabdeaeaabcedaaabdeae 
-Resultado: 9 
-
-Ra: 14411 
-Resposta: eabdeaeaabcdaeeaabdaaeaabcdaeeaaeaeaabcdaeeaabdaabde 
-Resultado: 11 
-
-Ra: 15286 
-Resposta: acbabbbdadeebedcdacbabcbdebdbcabdbebadbcbdabebdabcba 
-Resultado: 9 
-
-Ra: 12121 
-Resposta: abcbabcbdebbcbadbebabcaacbceebbdedabbcbadbebcbabdbeb 
-Resultado: 13 
-
-Ra: 13241 
-Resposta: caaedcedaceadecbcbabcbbebdabebdbacbabdbadebbaebebadb 
-Resultado: 14 
-
-Ra: 16511 
-Resposta: edadbebabbdcccabacaedeeecadeacddacabdbaebcabdabebcab 
-Resultado: 11 
-
-Ra: 11144 
-Resposta: bcabadbdabebebabdbbbcccdaaacdaceadcaeeeadcadededcaed 
-Resultado: 15 
-
+RA: 13244 - Resultado: 8
+RA: 12134 - Resultado: 9
+RA: 12131 - Resultado: 9
+RA: 13311 - Resultado: 9
+RA: 15286 - Resultado: 9
+RA: 12233 - Resultado: 10
+RA: 12341 - Resultado: 11
+RA: 14411 - Resultado: 11
+RA: 16511 - Resultado: 11
+RA: 12121 - Resultado: 13
+RA: 13241 - Resultado: 14
+RA: 11144 - Resultado: 15

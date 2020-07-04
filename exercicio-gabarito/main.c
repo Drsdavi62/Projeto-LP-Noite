@@ -2,9 +2,15 @@
 #include <stdlib.h>
 #include <string.h>
 
+void bubbleSort(int results[], int ra[], int n);
+void swap(int *xp, int *yp);
+
+FILE *fResultFormat;
+FILE *fResult;
+
 int main()
 {
-    FILE *fResp, *fGab, *fResult, *fResultFormat;
+    FILE *fResp, *fGab;
     int ra;
     int comp = 0;
     char resp[101] = "";
@@ -13,7 +19,8 @@ int main()
     char * gabarito = "./resources/gabarito.txt";
     char * resultado = "./resources/resultado.txt";
     char * resultadoFormatado = "./resources/resultadoFormatado.txt";
-
+    int raArray[50] = {0};
+    int respArray[50] = {0};
     fResp = fopen(respostas, "r");
     fGab = fopen(gabarito, "r");
     fResult = fopen(resultado, "w");
@@ -21,35 +28,57 @@ int main()
 
     fgets(gab, 100, fGab);
 
+    int i = 0;
+
     while (fgets(resp, 1000, fResp) != NULL){
         char * token = strtok(resp, " ");
        int index = 0;
         while( token != NULL ) {
             if(index == 0){
-                fprintf(fResultFormat, "Ra: %s \n", token );
-                fputs(token, fResult);
+                raArray[i] = atoi(token);
             }else {
-                fprintf(fResultFormat, "Resposta: %s \n", token );
                 for(int i = 0; i < strlen(token); i++){
                     if(gab[i] == token[i]){
                         comp++;
                     }
                 }
-                char res[50];
-                snprintf(res, 50, "  %d", comp);
-                fprintf(fResultFormat, "Resultado: %d \n\n", comp);
-                fputs(res, fResult);
+                respArray[i] = comp;
                 comp = 0;
-                fputs("\n", fResult);
             }
             token = strtok(NULL, "\n");
             index++;
         }
+        i++;
     }
 
+    bubbleSort(respArray, raArray, i);
     fclose(fResp);
     fclose(fGab);
     fclose(fResult);
 
     return 0;
+}
+
+void bubbleSort(int results[], int ra[], int n)
+{
+    int i, j;
+    for (i = 0; i < n-1; i++){
+        for (j = 0; j < n-i-1; j++){
+            if (results[j] > results[j+1]){
+                swap(&results[j], &results[j+1]);
+                swap(&ra[j], &ra[j + 1]);
+            }
+        }
+    }
+     for (int c = 0; c < n; c++){
+        fprintf(fResult, "%d %d\n", ra[c], results[c]);
+        fprintf(fResultFormat, "RA: %d - Resultado: %d\n", ra[c], results[c]);
+     }
+}
+
+void swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
 }
