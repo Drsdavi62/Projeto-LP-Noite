@@ -64,7 +64,7 @@ void bubbleSort(int results[], int ra[], int n)
     int i, j;
     for (i = 0; i < n-1; i++){
         for (j = 0; j < n-i-1; j++){
-            if (results[j] > results[j+1]){
+            if (results[j] < results[j+1]){
                 swap(&results[j], &results[j+1]);
                 swap(&ra[j], &ra[j + 1]);
             }
