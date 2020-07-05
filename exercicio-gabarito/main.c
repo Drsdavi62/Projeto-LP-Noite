@@ -10,6 +10,7 @@ FILE *fResult;
 
 int main()
 {
+    printf("Processando... \n");
     FILE *fResp, *fGab;
     int ra;
     int comp = 0;
@@ -55,6 +56,9 @@ int main()
     fclose(fResp);
     fclose(fGab);
     fclose(fResult);
+
+    printf("Procesimento realizado com sucesso. \n");
+    printf("Verifique os resultados em %s", resultadoFormatado);
 
     return 0;
 }

@@ -5,7 +5,7 @@
 
 struct Cliente{
 	char nome[265];
-    long int cpf;
+    char cpf[11];
 };
 
 struct Conta{
@@ -19,7 +19,7 @@ void criarConta(){
     gets(pCliente.nome);
     fflush(stdin);
   	printf("Digite seu CPF\n");
-  	scanf("%ld", &pCliente.cpf);
+    gets(pCliente.cpf);
 
   	pConta.numero = 1234;
   	pConta.cliente = pCliente;
@@ -78,7 +78,7 @@ void saque(float valor){
 void imprimirSaldo(){
 	printf("\nConta %d\n", pConta.numero);
   	printf("Nome: %s\n", pConta.cliente.nome);
-  	printf("CPF: %ld\n", pConta.cliente.cpf);
+  	printf("CPF: %s\n", pConta.cliente.cpf);
   	printf("Seu saldo eh de R$%.2f\n", pConta.saldo);
   	system("pause");
     system("cls");

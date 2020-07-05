@@ -25,3 +25,16 @@
 
 1593272478 /home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/banco.h
 
+1593350286 source:/home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/exercicio-banco/main.c
+	<stdio.h>
+	<stdlib.h>
+	"banco.c"
+
+1593987051 /home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/exercicio-banco/banco.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"banco.h"
+
+1593350286 /home/artur/Documentos/repositories/private/c/Projeto-LP-Noite/exercicio-banco/banco.h
+
